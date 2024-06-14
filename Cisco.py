@@ -96,7 +96,7 @@ def checkwin():
 def computerturn(board) :
     while player == "O" :
         position = random.randint(0,8)
-        if board[position] == "1" or board[position] == "2" or board[position] == "3" or board[position] == "4" or board[position] == "5" or board[position] == "6" or board[position] == "7" or board[position] == "8" or board[position] == "9" :
+        if board[position] != 'X' and board[position] != 'O' and gamerunning is True :
             board[position] = "O"
             switchplayer(True)
 
